@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>JavaScriptで出来るコト</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<audio id="se1" src="sound/「よろしく頼む」.mp3"></audio>
+<audio id="se2" src="sound/カーソル移動2.mp3"></audio>
+<!-- ページ先頭（TOPボタン用） -->
+<div id="top"></div>
+
+<header>
+  <h1 class="header_logo">JavaScriptで出来るコト</h1>
+</header>
+
+<!-- ===== スライダー ===== -->
+<div class="swiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <a class="swiper-link" href="denntaku.html">
+        <img src="img/denntaku.png" alt="電卓">
+      </a>
+    </div>
+
+    <div class="swiper-slide">
+      <a class="swiper-link" href="mogura.html">
+        <img src="img/mogura.png" alt="もぐらたたき">
+      </a>
+    </div>
+
+    <div class="swiper-slide">
+      <a class="swiper-link" href="stopwatch.html">
+        <img src="img/stopwatch.png" alt="ストップウォッチ">
+      </a>
+    </div>
+
+  </div>
+
+  <!-- ボタン -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+  <!-- ページ丸 -->
+  <div class="swiper-pagination"></div>
+</div>
+
+<!-- ★ ずっと同じ位置にいる（右下固定）TOPボタン -->
+<a href="#top" class="float-btn">▲ TOP</a>
+
+<!-- Swiper JS（必須） -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<!-- 自作JSは一番最後 -->
+<script src="js-index.js"></script>
+
+</body>
+</html>

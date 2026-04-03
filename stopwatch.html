@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ストップウォッチ</title>
+  <link rel="stylesheet" href="stopwatch.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Stopwatch</h1>
+    <a href="index.html" class="back">← TOPに戻る</a>
+    <div class="time" id="time">00:00.00</div>
+
+    <div class="buttons">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn" disabled>Stop</button>
+      <button id="resetBtn" disabled>Reset</button>
+      <button id="lapBtn" disabled>Lap</button>
+    </div>
+
+    <ol class="laps" id="laps"></ol>
+
+    <p class="hint">※ 00:00.00 は「分:秒.1/100秒」だよ</p>
+  </main>
+
+   <script src="stopwatch.js"></script>
+</body>
+</html>
+

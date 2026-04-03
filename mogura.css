@@ -1,0 +1,55 @@
+body{
+  font-family: "Yu Gothic", sans-serif;
+  text-align: center;
+  background: #e4f4bf;
+  margin: 0;
+  padding: 20px;
+}
+
+h1{
+  color: #2a4d00;
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button{
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: #2a4d00;
+  color: #fff;
+}
+
+.field{
+  display: flex;
+  justify-content: center;
+}
+
+.hole{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 6px solid #7c5a2e;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background 0.15s, transform 0.08s;
+}
+
+.hole:active{
+  transform: scale(0.95);
+}
+
+.hole.active{
+  background: #7c5a2e;
+}
